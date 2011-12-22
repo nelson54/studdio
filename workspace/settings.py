@@ -1,5 +1,7 @@
 # Django settings for workspace project.
+import os
 
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
