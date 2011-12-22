@@ -12,6 +12,9 @@ urlpatterns = patterns('',
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
+    url(r'^api/json/(?P<user>\w+)/sets/', 'flashcards.views.user_datasets'),
+    url(r'^api/json/(?P<user>\w+)/', 'flashcards.views.user'),
+
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 )
